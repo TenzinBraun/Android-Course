@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_gradient"
+        android:contentDescription="@string/background_description" />
+
+    <ImageView
+        android:id="@+id/connexion_panel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"/>
+
+    <EditText style="@style/WideView"
+        android:id="@+id/auth_username"
+
+        android:layout_below="@id/connexion_panel"
+        android:hint="@string/username"
+        android:background="@drawable/auth_edit_text_shape"
+        android:padding="@dimen/padding_edit_view"
+        android:inputType="text" />
+
+    <TextView style="@style/WideView"
+        android:id="@+id/auth_error"
+        android:layout_below="@id/auth_username"
+        android:textColor="@color/errorRedColor"
+        android:textSize="@dimen/auth_error_text_size" />
+
+    <EditText style="@style/WideView"
+        android:id="@+id/auth_password"
+
+        android:layout_below="@id/auth_error"
+
+        android:padding="@dimen/padding_edit_view"
+        android:hint="Password"
+
+        android:background="@drawable/auth_edit_text_shape"
+        android:inputType="textPassword"
+        />
+    <Button style="@style/WideView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/auth_password"
+        android:textAlignment="center"
+        android:text="@string/button_connexion"
+        android:textSize="25sp"
+        android:onClick="connection"/>
+
+</RelativeLayout>

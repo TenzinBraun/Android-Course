@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ActivityEvent</string>
+    <string name="hint_change_label">Write Something Inside this Edit Text</string>
+    <string name="change_text">Change Text</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="background_description">Beautiful background</string>
+    <string name="username">Username</string>
+    <string name="button_connexion">Connexion</string>
+    <string name="auth_error">Error cannot connect</string>
+    <string name="reset"> </string>
+    <string name="button_1">1</string>
+    <string name="menu_button_calculator">Calculator</string>
+    <string name="menu_score_board">Score Board</string>
+    <string name="menu_progress_bar">Progress Bar</string>
+    <string name="resume">Resume</string>
+    <string name="pause_button">Pause</string>
+</resources>

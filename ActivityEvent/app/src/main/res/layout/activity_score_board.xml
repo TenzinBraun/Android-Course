@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreBoardActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/chronometer_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:onClick="startCounter"/>
+
+        <Button
+            android:id="@+id/pause_resume_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_count"
+            android:text="@string/pause_button"
+            android:onClick="pauseOrResume"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pause_resume_count"
+            android:text="Reset"
+            android:onClick="resetTimer"/>
+
+    </RelativeLayout>
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:format="%s"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/plus_minus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:text="@string/minus_button"
+            android:textSize="75sp"
+            android:layout_weight="1"
+            android:onClick="decreaseProgressBar"/>
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:text="@string/plus_button"
+            android:textSize="75sp"
+            android:layout_weight="1"
+            android:onClick="increaseProgressBar"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_horizontal_bar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/plus_minus_layout"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:backgroundTint="#FF0066"/>
+
+</RelativeLayout>
