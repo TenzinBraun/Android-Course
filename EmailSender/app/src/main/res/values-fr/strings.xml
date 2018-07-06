@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Email</string>
+    <string name="recipient_label">Destinataire</string>
+    <string name="object_label">Objet</string>
+    <string name="send_mail_button">Envoyez Email</string>
+</resources>

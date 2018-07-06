@@ -1,5 +1,6 @@
 package fr.iutmindfuck.emailsender;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +13,9 @@ import android.widget.Toast;
 
 public class WebNotesActivity extends AppCompatActivity {
     WebView webView;
+
+    
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

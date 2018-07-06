@@ -3,4 +3,8 @@
     <string name="recipient_label">Recipient</string>
     <string name="object_label">Object</string>
     <string name="send_mail_button">send mail</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
