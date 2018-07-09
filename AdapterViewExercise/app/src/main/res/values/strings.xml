@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdapterViewExercise</string>
+    <string name="animal_size">Size</string>
+    <string name="animal_gender">Gender</string>
+</resources>
