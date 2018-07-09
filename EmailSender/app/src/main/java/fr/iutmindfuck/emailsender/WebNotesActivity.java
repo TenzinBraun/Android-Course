@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class WebNotesActivity extends AppCompatActivity {
     WebView webView;
 
-    
+
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,9 @@ public class WebNotesActivity extends AppCompatActivity {
 
         final Activity activity = this;
         webView = findViewById(R.id.youtube_displaying);
+
         webView.getSettings().setJavaScriptEnabled(true);
+
         webView.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView view, int progress) {
                 // Activities and WebViews measure progress with different scales.
@@ -37,6 +39,8 @@ public class WebNotesActivity extends AppCompatActivity {
                 Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
         webView.loadUrl("http://www.soundcloud.com");
     }
