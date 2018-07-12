@@ -52,6 +52,7 @@ public class CelebritiesArrayAdapter extends ArrayAdapter<Celebrity> {
         assert celebrity != null;
         switch (celebrity.getCelebrityGender()) {
             case "Man":
+                imageView.getResources().getColor(android.R.color.black);
                 imageView.setBackgroundColor(Color.rgb(0, 0, 255));
                 break;
             case "Woman":
